@@ -1,0 +1,43 @@
+<mvc:View controllerName="zjobworkchallan.controller.Job_Work_Challan"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m"
+    xmlns:f="sap.ui.layout.form" xmlns:core="sap.ui.core">
+    <Page id="page" title="{i18n>title}">
+        <content>
+        <f:SimpleForm id="form" title="Job work challan " editable="true" emptySpanXL="7" emptySpanL="7" emptySpanM="6" layout="ResponsiveGridLayout" class="">
+            <f:content>
+            <Label id="a1" text="Challan Number" />
+            <Input id="id_challanNumber" maxLength="10" required="true"  />
+            <Label id="a2" text="Year" />
+           <DatePicker value="{year}" displayFormat="yyyy" valueFormat="yyyy" id="id_year"/>
+            <Label id="a3" text="Vehicle Number" ></Label>
+            <Input id="id_vehicleNo" />
+            <Label id="a4" text="Mode of Transport" ></Label>
+            <Input id="id_modeOfTransport" />
+            <Label id="a5" text="Name of Transport" ></Label>
+            <Input id="id_nameOfTransport" />
+            <Label id="a6" text="Dispatch Date" />
+            <DatePicker id="id_dispatchDate" ></DatePicker>
+            <Label id="a7" text="Dispatch Time" />
+            <TimePicker id="id_dispatchTime" ></TimePicker>
+            <Label id="a8" text="Duration" />
+            <Input id="id_duration" />
+            <Label id="a9" />
+            <RadioButtonGroup id="id_radioButton" >
+            <RadioButton id="a10" text="Job Weaving"></RadioButton>
+            <RadioButton id="a11" text="Job Processing"></RadioButton>
+            <RadioButton id="a12" text="Job Sizing"></RadioButton>
+            <RadioButton  id="a13" text="Job Dyeing"></RadioButton>
+            <RadioButton id="a14" text="Job Doubling"></RadioButton>
+            <RadioButton id="a15" text="Job Printing"></RadioButton>
+            <RadioButton id="a16" text="Job Lamination"></RadioButton>
+            <RadioButton id="a17" text="Job Twisting"></RadioButton>
+            </RadioButtonGroup>
+
+            <Label id="a18" />
+            <Button text="Submit" id="submit" press="onPress" type="Emphasized" />
+            </f:content>
+        </f:SimpleForm>
+        </content>
+    </Page>
+</mvc:View>
